@@ -1,3 +1,6 @@
+All credit at https://gist.github.com/vasanthk
+
+
 # System Design Cheatsheet
 
 > Picking the right architecture = Picking the right battles + Managing trade-offs
