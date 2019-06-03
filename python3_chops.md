@@ -1,3 +1,14 @@
+
+Alt-H1 FOR EFFICIENT DS
+
+## ARRAYS [] CHOPS
+
+## PANDAS PD CHOPS
+
+
+
+## A BUNCH OF OLD STUFFS
+
 abs(*int or *float) -->  return absolute value
 complex(*int1, *int2) --> return int1 + j*int2
 divmod(*int1, *int2) --> return modular division and remainder
@@ -12,6 +23,7 @@ any(*iterable) --> return true if any element is true
 bool(#[x])  --> standard truth telling procedure
 callable(*object) --> return true if object callable {ie class or instance}
 enumerate(iterable, start=0)  --> range(iterable), object[]
+
 
 
 ascii(object) --> return readable string of ascii codes
