@@ -3,6 +3,14 @@ Alt-H1 FOR EFFICIENT DS
 
 ## ARRAYS [] CHOPS
 
+```python3
+map()
+list
+zip
+
+```
+
+
 ## PANDAS PD CHOPS
 
 
