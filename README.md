@@ -7,16 +7,24 @@ marketing is pushing values
 brands nike,disney, coke, sony, apple
 got milk vs nutritional
 nike honors great atheletics in their ads
-apple core is 
-```
-we believe that people with passion can change the world for the better
+
+```bash
+apple core is
+>
+we believe that people with passion 
+can change the world 
+for the better
 
 and
 
-those people who are crazy enought to believe that they can change the world... are the ones that actually do
+those people who are crazy enough 
+to believe 
+that they can change the world... 
+are the ones that actually do
 ```
 Values and core values... shouldnt change, while markets change
 
+```
 heres to the crazy ones
 the misfits
 the rebels
@@ -31,7 +39,7 @@ Because the people
 who are crazy enough to think 
 they can change the world, 
 are the ones who do
-
+```
 
 check
 
