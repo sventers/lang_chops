@@ -1,10 +1,23 @@
 
 Alt-H1 FOR EFFICIENT DS
 
+https://docs.python.org/3/library/functions.html
+
 ## ARRAYS [] CHOPS
 
+manipulations
+
 ```python3
+# 
+
+
+funcname = lambda argument_list: expression
+funcname(args)
+
 map()
+
+
+
 list
 zip
 
@@ -16,7 +29,7 @@ zip
 
 
 ## A BUNCH OF OLD STUFFS
-
+```python3
 abs(*int or *float) -->  return absolute value
 complex(*int1, *int2) --> return int1 + j*int2
 divmod(*int1, *int2) --> return modular division and remainder
@@ -78,3 +91,4 @@ set()
 list()  --> mutable seq type
 tuple()  --> immutable seq type
 collections module
+```
