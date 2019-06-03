@@ -15,10 +15,17 @@ http://github.com - automatic!
 ```
 
 codeblocks
-\`\`\`
-
-
 ```
+\`\`\`python3
+def iluv (you):
+    who = you
+    besties = you
+    return besties
+\`\`\`
+```
+
+
+```markdown
 - [x] this is a complete item
 - [ ] this is an incomplete item
 - [x] @mentions, #refs, [links](),
