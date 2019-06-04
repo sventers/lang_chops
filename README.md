@@ -1,6 +1,12 @@
 # Chops of instructions with ctrl-f in mind
 
+At present at always this is a work in progress, towards documentation simplification </br>
+It serves for me as a place\
+To write and use new concepts\
+And I hope to remember the majority contained here\
+As these notes grow\
 
+### Random Ad notes
 
 Ad Notes:
 marketing is pushing values
