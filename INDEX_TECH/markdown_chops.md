@@ -4,30 +4,40 @@
 * [github api](https://developer.github.com/v3/markdown/) </br>
 * [mkdocs proj documentation](https://github.com/mkdocs/mkdocs)
 
-#### Images, Pictures, jpeg, svg, png
-```
+## Images, Pictures, jpeg, svg, png
+
+```js
 ![GitHub Logo](/images/logo.png)
 Format: ![Alt Text](url)
 ```
 
-#### Preview, local, write, test, lazy reload, auto-reload
+## Preview, local, write, test, lazy reload, auto-reload
+
+in vscode  "ctrl+v k" to preview in new tab split side-by-side ----
+[ref](https://code.visualstudio.com/docs/languages/markdown)
+
 [grip github link] (https://github.com/joeyespo/grip) \
 pip install --user grip
+
 ```bash
 grip FILENAME.md
 #defaults to README.md in current directory
 ```
 
-#### line breaks, bold, italic, color, font size, font type,
-```
+## line breaks, bold, italic, color, font size, font type,
+
+```html
 </br> or \  line breaks
 # h1 (with space after #)
-## h2 
-###### h6 
+## h2
+
+###### h6
+
 ```
 
+## List, index, items, ordered, bullets, points, numbers
 
-#### List, index, items, ordered, bullets, points, numbers
+```markdown
 * list
 * ex
     * indent with tab
@@ -40,8 +50,9 @@ grip FILENAME.md
 supported
     - [ ] list syntax required (any
 unordered or ordered
-
 ```
+
+```markdown
 * list
 * above
     * indent with tab
@@ -55,15 +66,16 @@ supported
 unordered or ordered
 ```
 
+## Links
 
-#### Links
-```
+```html
 http://github.com - automatic!
 [GitHub](http://github.com)
 ```
 
-#### Codeblocks
-```
+## Codeblocks
+
+```markdown
 ```python3
 def iluv (you):
     who = you
@@ -74,16 +86,14 @@ def iluv (you):
 (end ``` and no mas, without . from 2 lines above)
 ```
 
+## GitHub supports emoji!
 
-
-#### GitHub supports emoji!
 :+1: :sparkles: :camel: :tada: \
 :rocket: :metal: :octocat:
-```
+
+```emoji
 :+1: :sparkles: :camel: :tada:
 :rocket: :metal: :octocat:
 ```
-
-
 
 Write!

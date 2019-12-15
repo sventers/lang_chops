@@ -1,28 +1,41 @@
 
+# Python 3 notes
+
 Alt-H1 FOR EFFICIENT DS
 
-https://docs.python.org/3/library/functions.html
+[builtin functions](https://docs.python.org/3/library/functions.html)
 
 ## ARRAYS [] CHOPS
 
-manipulations
+inspect.getmembers(object) --> see all the stuff inside of the object
+
+pip or pip3 help
+
+```bash
+# this puts it into py 3.6 and not system python dir
+pip3 install --upgrade PACKAGE --user  
+pip list
+
+```
 
 ```python3
-# 
-
 
 funcname = lambda argument_list: expression
 funcname(args)
 
 map()
-
-
-
 list
 zip
 
 ```
 
+
+transpose array
+```
+zip(*ARRAY)
+```
+
+.rsplit(", ")   --> csv line to array
 
 ## PANDAS PD CHOPS
 

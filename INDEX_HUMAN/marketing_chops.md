@@ -1,18 +1,12 @@
-# Chops of instructions with ctrl-f in mind
+# Marketing
 
-At present at always this is a work in progress, towards documentation simplification </br>
-It serves for me as a place\
-To write and use new concepts\
-And I hope to remember the majority contained here\
-As these notes grow\
+## -> Random Ad notes
 
-### Random Ad notes
-
-Ad Notes:
-marketing is pushing values
-brands nike,disney, coke, sony, apple
-got milk vs nutritional
-nike honors great atheletics in their ads
+    Ad Notes:
+    marketing is pushing values
+    brands nike,disney, coke, sony, apple
+    got milk vs nutritional
+    nike honors great atheletics in their ads
 
 ```bash
 apple core is
@@ -23,11 +17,12 @@ for the better
 
 and
 
-those people who are crazy enough 
-to believe 
-that they can change the world... 
+those people who are crazy enough
+to believe
+that they can change the world...
 are the ones that actually do
 ```
+
 Values and core values... shouldnt change, while markets change
 
 ```
@@ -49,7 +44,7 @@ are the ones who do
 
 check
 
-it's a process of taking very centralized things and 
+it's a process of taking very centralized things and
 
 making them very democratic, very individualized
 
@@ -64,8 +59,3 @@ to amplifiy an inherent ability that he has
 an instantaneous reflection of the creative part of the self
 
 computers dont do that to people, people do that to people
-
-<h4> cheatsheats, chops, steaks, references </h4>
-
-
-check
