@@ -1,10 +1,10 @@
 # vscode notes
-
-- most useful things
-- regex for search/replace
-- setting.json config
-- plugin / extension managing
-- colors
+*links to sections on this page*
+- [most useful things](#mostusefulthings)
+- [regex for search/replace](#regexforsearch/replace)
+- [setting.json config](#setting.jsonconfig)
+- [plugin / extension managing](#plugin/extensionmanaging)
+- [colors](#colors)
 
 
 

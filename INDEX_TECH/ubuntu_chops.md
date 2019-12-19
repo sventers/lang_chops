@@ -1,26 +1,37 @@
 # ubuntu terminal notes
-This contains stuff for efficiency or system level common fuck ups correction
 
-## -> filesystem exploring / navigation
+from asus ubuntus 16.04 and 18.04 in dual boot
 
-ranger - vim keys navigating filesystem
-ncdu - shows size of all files sorted navigate with arrow keys
+- [navigation](#navigation)
+- [network](#network)
+- [packages](#packages)
 
-## -> network management
+## -> Filesystem Exploring / Navigation
 
-ip route
-systemd-resolve --status
+ranger
+
+vim keys navigating filesystem
+
+ncdu
+
+shows size of all files sorted navigate with arrow keys
+
+## -> Network Management
+
+difficults connecting to unsecured wifi networks with login pages
+
+    sudo service network-manager restart
+    ip route
+    systemd-resolve --status
 
 sometimes you can check the dns of a page if your phone connects to and then add it to you /etc/resolv.conf file ahead of 8.8.8.8 or your normal dns
 
-## -> for package management
+## -> Packages
 
 ```bash
 type PACKAGE   #shows install path
 apt-cache policy PACKAGE     #
 ```
-
-sudo service network-manager restart
 
 ## -> storage, disk space
 
@@ -69,10 +80,10 @@ if
 
 ## regex
 
-[a-z]*
-[0-9]*
+[a-z]_
+[0-9]_
 ^
-.*
+.\*
 
 ## pipes
 

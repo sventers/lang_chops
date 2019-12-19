@@ -1,28 +1,22 @@
 # Markdown Chops
 
-* [source cheatsheat](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) </br>
-* [github api](https://developer.github.com/v3/markdown/) </br>
 * [mkdocs proj documentation](https://github.com/mkdocs/mkdocs)
 
 ## Images, Pictures, jpeg, svg, png
 
-```js
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
-```
+    ![GitHub Logo](/images/logo.png)
+    Format: ![Alt Text](url)
 
 ## Preview, local, write, test, lazy reload, auto-reload
 
 in vscode  "ctrl+v k" to preview in new tab split side-by-side ----
 [ref](https://code.visualstudio.com/docs/languages/markdown)
 
-[grip github link] (https://github.com/joeyespo/grip) \
-pip install --user grip
+    [grip github link] (https://github.com/joeyespo/grip) \
+    pip install --user grip
 
-```bash
-grip FILENAME.md
-#defaults to README.md in current directory
-```
+    grip FILENAME.md
+    #defaults to README.md in current directory
 
 ## line breaks, bold, italic, color, font size, font type,
 

@@ -1,10 +1,15 @@
 # git notes
 
-## -> create / init
+* [create](#create)
+* [merging/branching](#merging)
+
+## -> Create / Initialize
+
+download existing git repo from github
 
     curl -u 'username' https://api.github.com/user/repos -d '{"name":"REPO"}'
 
-## -> merging / branching
+## -> Merging Branching
 
     git merge dev --allow-unrelated-histories
 
@@ -26,125 +31,221 @@
     git pull <remote> master:dev
     git push -u origin master
 
-## -> license choice
 
-[github help page](https://help.github.com/en/articles/licensing-a-repository)
 
-```bash
-git log -n X -p   ---  show X last commits with diffs
+show X last commits with diffs
 
-git log __branchA__ ^__branchB__   ---  commits in branch A that arent in branch B
+    git log -n X -p
 
-git log --pretty=oneline --stat --all __foldername__   ---  modified files under a given folder
+commits in branch A that arent in branch B
 
-git fetch```
+    git log __branchA__ ^__branchB__
 
-git pull origin __branchname__```
+modified files under a given folder
 
-git merge --no-ff __sourcebranch__   ---  merge into current branch source one without rebase/FF
+    git log --pretty=oneline --stat --all __foldername__
 
-git push origin __destinationbranch__   ---  push merges/changesets to a branch
+	git fetch
 
-git remote show origin   ---  display the path of the repository
+	git pull origin __branchname__
 
-git remote set-url origin xxx   ---  Change remote URI to xxx
+  merge into current branch source one without rebase/FF
 
-git remote rm origin   ---  Remove remote URI
+	git merge --no-ff __sourcebranch__   
 
-git remote add origin git@github.com:CartoDB/cartodb.js.git   ---  Add remote URI (for example after adding SSH key with ```ssh-add ~/.ssh/id_rsa```). Must first `git remote rm origin` to remove previous one.
+  push merges/changesets to a branch
 
-git add xxx   ---  add files (use . for everything, __folder__/.. for folder recursive children)
+	git push origin __destinationbranch__   
 
-git commit   ---  commit changes
+  display the path of the repository
 
-git status   ---  show status of uncommited files
+	git remote show origin   
 
-git checkout __file__   ---  revert a file
+  Change remote URI to xxx
 
-git checkout __branchname__ __file__   ---  Checkout all changes to __file__ from branch __branchname__ into current
+	git remote set-url origin xxx   
 
-git checkout __revision__ .   ---  revert a full branch to specified revision if not commited
+  Remove remote URI
 
-git revert __commit1__ __commit2__ ...```: Reverts certain commits if commited
+	git remote rm origin   
 
-git reset __revision__ .```: revert a full branch to specified revision if commited
+  Add remote URI (for example after adding SSH key with ```ssh-add ~/.ssh/id_rsa```). Must first `git remote rm origin` to remove previous one.
 
-git clean -f   ---  remove all local uncommited modifications
+	git remote add origin git@github.com:CartoDB/cartodb.js.git   
 
-git branch   ---  display local branches, active one is with a *
+  add files (use . for everything, __folder__/.. for folder recursive children)
 
-git diff   ---  Show changes in files
+	git add xxx   
 
-git diff __branch__ origin/__remotebranch__   ---  show a diff between a local branch and a remote one
+  commit changes
 
-git rebase __branchname__   ---  rebases current branch with specified branch (fetches remote branch changes and then adds yours at the tip)
+	git commit   
 
-git rm __filename__   ---  delete a file from branch and filesystem
+  show status of uncommited files
 
-git branch -d __branchname__   ---  delete a local branch
+	git status   
 
-git push origin --delete __branchname__   ---  delete a remote brach
+  revert a file
 
-gitk __filename__   ---  show visual git log
+	git checkout __file__   
 
-git reset --soft HEAD~1   ---  reset to last commit (even if pushed). Can re-commit stuff but if already pushed will need to push with `--force`.
+  Checkout all changes to __file__ from branch __branchname__ into current
 
-git reset --soft <new-root-sha1> && git commit --amend -m "<new message>" && git push --force```: squash all branch pushed commits previous to the one specified into a single commit with the desired new message.
+	git checkout __branchname__ __file__   
 
-git log origin/__branchname__..__branchname__   ---  Show diff between local commits and remote commits
+  revert a full branch to specified revision if not commited
 
-git config --list   ---  List currently setup config values
+	git checkout __revision__ .   
 
-git config --global user.name "Kartones"   ---  Setup global user name
+ Reverts certain commits if commited
 
-git config --global user.email "d...@....net"   ---  Setup global user email
+	git revert __commit1__ __commit2__ ...
 
-git config --global credential.helper 'cache --timeout=28800'   ---  Make git cache credentials for 8 hours
+ revert a full branch to specified revision if commited
 
-git config --global color.ui true   ---  Activate colors in diffs, etc.
+	git reset __revision__ .
 
-git config --global core.autocrlf true   ---  Fix Convert newlines to Unix-style ones (**Windows**)
+  remove all local uncommited modifications
 
-git config --global core.autocrlf input   ---  Fix Convert newlines to Unix-style ones (**Unix**)* 
+	git clean -f   
 
-git config --global pager.log 'diff-highlight | less'```: Better diff highlighting (same for 3 following options)
+  display local branches, active one is with a *
 
-git config --global pager.show 'diff-highlight | less'```
+	git branch   
 
-git config --global pager.diff 'diff-highlight | less'```
+  Show changes in files
 
-git config --global interactive.diffFilter diff-highlight```
+	git diff   
 
-git submodule update --init --recursive   ---  Init and update all submodules
+  show a diff between a local branch and a remote one
 
-git submodule init && git submodule update   ---  Retrieve and update all submodules (alt)
+	git diff __branch__ origin/__remotebranch__   
+
+  rebases current branch with specified branch (fetches remote branch changes and then adds yours at the tip)
+
+	git rebase __branchname__   
+
+  delete a file from branch and filesystem
+
+	git rm __filename__   
+
+  delete a local branch
+
+	git branch -d __branchname__   
+
+  delete a remote brach
+
+	git push origin --delete __branchname__   
+
+  show visual git log
+
+	gitk __filename__   
+
+  reset to last commit (even if pushed). Can re-commit stuff but if already pushed will need to push with `--force`.
+
+	git reset --soft HEAD~1   
+
+ squash all branch pushed commits previous to the one specified into a single commit with the desired new message.
+
+	git reset --soft <new-root-sha1> && git commit --amend -m "<new message>" && git push --force
+
+  Show diff between local commits and remote commits
+
+	git log origin/__branchname__..__branchname__   
+
+  List currently setup config values
+
+	git config --list   
+
+  Setup global user name
+
+	git config --global user.name "Kartones"   
+
+  Setup global user email
+
+	git config --global user.email "d...@....net"   
+
+  Make git cache credentials for 8 hours
+
+	git config --global credential.helper 'cache --timeout=28800'   
+
+  Activate colors in diffs, etc.
+
+	git config --global color.ui true   
+
+  Fix Convert newlines to Unix-style ones (**Windows**)
+
+	git config --global core.autocrlf true   
+
+  Fix Convert newlines to Unix-style ones (**Unix**)* 
+
+	git config --global core.autocrlf input   
+
+ Better diff highlighting (same for 3 following options)
+
+	git config --global pager.log 'diff-highlight | less'
+
+	git config --global pager.show 'diff-highlight | less'
+
+	git config --global pager.diff 'diff-highlight | less'
+
+	git config --global interactive.diffFilter diff-highlight
+
+  Init and update all submodules
+
+	git submodule update --init --recursive   
+
+  Retrieve and update all submodules (alt)
+
+	git submodule init && git submodule update   
 
 rm -Rf __submoduledir__
 
-git reset && git checkout .
+	git reset && git checkout .
 
-git checkout __branchname__
-```
+	git checkout __branchname__
 
-git pull https://github.com/__username__/__reponame__.git __branchname__```: [Merge a pull request to local branch](https://help.github.com/articles/merging-a-pull-request)
+//help.github.com/articles/merging-a-pull-request)
 
-git stash```: [Stash](http://git-scm.com/book/en/Git-Tools-Stashing) current changes
+	git pull https://github.com/__username__/__reponame__.git __branchname__: [Merge a pull request to local branch](https
 
-git stash apply```: Unstash and merge stored changes
+//git-scm.com/book/en/Git-Tools-Stashing) current changes
 
-git checkout --theirs xxxx``` ```git checkout --ours xxxx```: Keep changes from incoming branch or local one, respectively.
+	git stash: [Stash](http
 
-git blame -M```: Blames original commit, not the move commit
+ Unstash and merge stored changes
 
-git blame -CCC```: Looks at all commits in history
+	git stash apply
 
-git cherry-pick __commit__```: merges and commits a specific commit to current branch
+ Keep changes from incoming branch or local one, respectively.
 
-git reflog``` + ```git reset HEAD@__commit__```: show all changes on all branches and revert to a specific one
+	git checkout --theirs xxxx 
+    git checkout --ours xxxx
 
-git commit --amend```: Squash a change on previous commit and change the commit message
+ Blames original commit, not the move commit
 
-git diff --staged```: Show both staged and unstaged changes that you will commit
+	git blame -M
+
+ Looks at all commits in history
+
+	git blame -CCC
+
+ merges and commits a specific commit to current branch
+
+	git cherry-pick __commit__
+
+ show all changes on all branches and revert to a specific one
+
+	git reflog 
+    git reset HEAD@__commit__
+
+ Squash a change on previous commit and change the commit message
+
+	git commit --amend
+
+ Show both staged and unstaged changes that you will commit
+
+	git diff --staged
 
 * Undo a commit removing it from history
 
@@ -163,15 +264,15 @@ git push origin <label>
 
 * [Syncing a fork](https://help.github.com/articles/syncing-a-fork/) (first [configure remote upstream](https://help.github.com/articles/configuring-a-remote-for-a-fork/))
 
-Searches
+## -> Searches
 --------
 * [Issues in which you're mentioned](https://github.com/issues/mentioned)
 * [Pull requests in which you're mentioned](https://github.com/pulls/mentioned)
 * [All open issues and pull requests of organization `TEST`](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+org%3ATEST+sort%3Aupdated-desc+): Change to proper organization name, and for example can filter to all assigned to you
 
 
-Third-party Tools
------------------
+## -> Third-party Tools
+
 * [tig](http://blogs.atlassian.com/2013/05/git-tig/): to navigate commits & branches
 * Github:
   * [Commands for automatically closing tickets when merged to default branch](https://help.github.com/articles/closing-issues-via-commit-messages/)
@@ -184,8 +285,11 @@ Third-party Tools
   https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+org%3Athemotion+sort%3Aupdated-desc+involves%3Akartones
   ```
 
+## -> license choice
 
-Tutorials
+[github help page](https://help.github.com/en/articles/licensing-a-repository)
+
+## -> Tutorials
 ---------
 * [Atlassian Git tutorial](http://www.atlassian.com/git/tutorial/)
 * [Git Cookbook](http://git-scm.com/book)
