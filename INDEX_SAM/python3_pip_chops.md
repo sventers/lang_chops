@@ -3,7 +3,9 @@
 
 - 
 
+
 reference
+- [cheatsheat](#https://gto76.github.io/python-cheatsheet)
 - [builtin functions](https://docs.python.org/3/library/functions.html)
 
 ## -> Python Environment
@@ -12,9 +14,23 @@ reference
 
 ## -> Exploring Objects
 
+import 
+
 ## -> Modules and Packages
 
-## -> Arrays
+defining \_\_init__ and \_\_main__
+
+## -> Loops, control stuctures
+
+pass like ignore me vs continue go to next loop loop
+
+try except
+
+## -> Variables
+
+[decorators](#https://stackoverflow.com/questions/6392739/what-does-the-at-symbol-do-in-python)
+
+    @functools
 
 reverse, backwards
 

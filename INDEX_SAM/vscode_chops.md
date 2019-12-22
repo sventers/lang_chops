@@ -10,6 +10,13 @@
 
 ## -> Most Useful Things
 
+
+## -> Text Editing
+
+highlight line
+
+    ctrl-l
+
 open vscode keyboard shortcut helpsheet
     
     ctrl-k + ctrl-r
@@ -22,6 +29,10 @@ add second curson
 
     shift+ctrl+{up or down arrow}
     esc to unselect
+
+delete current line
+
+    ctrl + shift + k
 
 ## -> Regex for Search / Replace
 
