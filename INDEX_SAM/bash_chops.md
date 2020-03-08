@@ -35,6 +35,11 @@ vfind
 
 operators
 
+A; B    # Run A and then B, regardless of success of A
+A && B  # Run B if and only if A succeeded
+A || B  # Run B if and only if A failed
+A &     # Run A in background.
+
 	* wildcard for array of chars
 	? wildcard for single char
 	> redirect shell output to file appends
@@ -62,6 +67,14 @@ make http request and trace out what happens on the way
 	URL = uniform resource locator. ref - RFC 3986
 
 ## -> Basic Advice
+
+## grep, find, awk, sed
+
+grep
+find
+awk
+sed
+locate
 
 show address of version in use
 

@@ -1,20 +1,33 @@
 # ubuntu terminal notes
 
-from asus ubuntus 16.04 and 18.04 in dual boot
+- [useful cli utilies](#cliTOOLS)
+- [network | wifi](#network)
+- [packages | apt-get | ppa](#packages)
+- [sound](#sound)
 
-- [navigation](#navigation)
-- [network](#network)
-- [packages](#packages)
+---
 
-## -> Filesystem Exploring / Navigation
+## -> cliTOOLS
 
-ranger
+- fzf --- fuzzy search in file directory
+- cloc -- count lines of code
+- ranger --- explorer / finder in 
+- ncdu --- shows size of all files sorted navigate with arrow keys
+- jq --- cli for editing json
 
-vim keys navigating filesystem
+---
 
-ncdu
+## -> Packages
 
-shows size of all files sorted navigate with arrow keys
+```bash
+type PACKAGE   #shows install path
+apt-cache policy PACKAGE
+apt-get    #
+ppa-purge
+aptitude
+```
+
+---
 
 ## -> Network Management
 
@@ -24,14 +37,11 @@ difficults connecting to unsecured wifi networks with login pages
     ip route
     systemd-resolve --status
 
+    iwconfig # check wifi speed
+
 sometimes you can check the dns of a page if your phone connects to and then add it to you /etc/resolv.conf file ahead of 8.8.8.8 or your normal dns
 
-## -> Packages
-
-```bash
-type PACKAGE   #shows install path
-apt-cache policy PACKAGE     #
-```
+---
 
 ## -> storage, disk space
 
@@ -63,14 +73,6 @@ echo
 ## environment, .bashrc, .bashprofile, .zsh
 
 env
-
-## grep, find, awk, sed
-
-grep
-find
-awk
-sed
-locate
 
 ## loops
 

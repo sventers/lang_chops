@@ -8,13 +8,25 @@ reference
 - [cheatsheat](#https://gto76.github.io/python-cheatsheet)
 - [builtin functions](https://docs.python.org/3/library/functions.html)
 
+## -> Libraries you want to learn
+
+```python3
+hashlib
+concurrent.futures
+argparse
+functools
+```
+
 ## -> Python Environment
 
 ## -> Naming and Project Structure
 
 ## -> Exploring Objects
 
-import 
+for obj
+  try:
+    dir(obj)
+    
 
 ## -> Modules and Packages
 
