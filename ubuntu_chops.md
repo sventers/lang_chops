@@ -15,7 +15,10 @@
 - ncdu --- shows size of all files sorted navigate with arrow keys
 - jq --- cli for editing json
 
----
+--
+
+inxi -Fxz
+    - show system profile, cpu, battery, hardware descriptions
 
 ## -> Packages
 
@@ -124,8 +127,6 @@ npx
 apt-get
 apt
 sudo
-
-## docker, docker-compose
 
 ## move mv, copy cp, touch, remove rm, make directory mkdir
 

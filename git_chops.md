@@ -5,20 +5,14 @@
 
 ## -> Create / Initialize
 
-download existing git repo from github
-
-    curl -u 'username' https://api.github.com/user/repos -d '{"name":"REPO"}'
+    git clone https://github.com/xxxxxx
 
 ## -> Merging Branching
 
     git merge dev --allow-unrelated-histories
-
     git checkout -b __newbranch__   --- get a new branch and switch to it
-
     git checkout -b __branchname__ / __branchname__   --- get a local copy of a remote existing branch
-    
     git checkout __branchname__   --- switch branch
-    
     git checkout --orphan __branchname__   --- create branch without full history
 
 ## -> add local git to existing github rep
@@ -28,10 +22,10 @@ download existing git repo from github
     git add .
     git commit -m "message"
     git remote add origin https://github.com/user/nameofgit.git
+    git pull origin master -v --allow-unrelated-histories
+    // or
     git pull <remote> master:dev
     git push -u origin master
-
-
 
 show X last commits with diffs
 

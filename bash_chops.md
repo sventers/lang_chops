@@ -112,6 +112,9 @@ shows information about the current processes running in shell
 
 ## -> Customizing
 
+chsh -s 
+	change shell zsh bash etc
+
 PS1 is the environment variable that contains the shell prompt. '\e[0;31m' is the terminal escape sequence to change color to red. '\u' is the user name, '\h' is the host name, '\W' is the current working directory and '\e[m' means "return to the default text color"
 
 	PS1="\e[0;32m\h \W\:~ \e[m "  

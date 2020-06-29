@@ -1,10 +1,89 @@
 
 # Python 3 notes
 
-- 
+## core builtins
 
+https://docs.python.org/3/library/functions.html
 
+```python
+open
+print
+compile
+eval
+    eval(*str), 
+exec
+input
+repr
+
+bytearray
+bytes
+
+vars
+dir
+format
+
+isinstance
+callable
+issubclass
+
+zip
+tuple  // immutable seq objtype
+map
+sorted
+list
+filter
+frozenset
+set
+iter
+reversed
+slice
+
+len
+range
+enumerate
+breakpoint
+hash
+id
+next
+
+object
+bin
+oct
+hex
+int
+chr
+str
+ord
+ascii
+bool
+float
+complex
+dict
+
+divmod
+max
+min
+pow
+round
+
+all
+any
+
+@property
+getattr
+hasattr
+delattr
+type
+
+@staticmethod
+@classmethod
+super
+globals
+locals
+help
+```
 reference
+
 - [cheatsheat](#https://gto76.github.io/python-cheatsheet)
 - [builtin functions](https://docs.python.org/3/library/functions.html)
 
@@ -15,34 +94,22 @@ hashlib
 concurrent.futures
 argparse
 functools
+numba jit compile
 ```
 
-## -> Python Environment
+## -> Pip <version> and Python Environment debian
 
-## -> Naming and Project Structure
+    which pip --- PATH?
+    pip show PAK
 
-## -> Exploring Objects
-
-for obj
-  try:
-    dir(obj)
-    
+    --user
+    on ubuntu designates user instead of system pip or pip3 installation
 
 ## -> Modules and Packages
 
 defining \_\_init__ and \_\_main__
 
-## -> Loops, control stuctures
-
-pass like ignore me vs continue go to next loop loop
-
-try except
-
 ## -> Variables
-
-[decorators](#https://stackoverflow.com/questions/6392739/what-does-the-at-symbol-do-in-python)
-
-    @functools
 
 reverse, backwards
 
@@ -52,60 +119,36 @@ transpose array
 
     zip(*ARRAY)
 
-other
-
-    map()
-    list
-    zip
-
-## -> Dictionaries
-
-## -> Integers, Strings, Chars, other datatypes
-
----
-
 ## -> some bullshit need to sort
-
-funcname = lambda argument_list: expression
-funcname(args)
-
 
     abs(*int or *float) -->  return absolute value
     complex(*int1, *int2) --> return int1 + j*int2
     divmod(*int1, *int2) --> return modular division and remainder
-    float(x) --> int, string, scientific to floating point
-    max()
-    min()
-    str()
-    sum()
+    floating point
     
     all(*iterable) --> return bool if all elements are true
     any(*iterable) --> return true if any element is true
     bool(#[x])  --> standard truth telling procedure
-        callable(*object) --> return true if object callable {ie class or instance}
+    callable(*object) --> return true if object callable {ie class or instance}
     enumerate(iterable, start=0)  --> range(iterable), object[]
-    
-    
+        
     
     ascii(object) --> return readable string of ascii codes
     bin(*int)  --> convert integer to binary '0bxxxxxxx' format
     hex()
     oct()
-        bytearray() --> return new byte array lenght of int in brackets
+    bytearray() --> return new byte array lenght of int in brackets
     bytes() --> return byte word
-        compile(source, filename, mode, flags=0, dont_inherit=False, optimize=-1)  -->
+    compile(source, filename, mode, flags=0, dont_inherit=False, optimize=-1)  -->
     id(object) -->  int value of id
     
-    
-    
+        
     chr(*int) --> integer to unicode point equivalent
     del x.*attribute
     isinstance(obj)
     issubclass(obj)
     staticmethod()
-    
-    
-    
+        
     
     classmethod() --> return class method of function??
     dir() --> list objects active in current sessionca
@@ -115,27 +158,15 @@ funcname(args)
     globals() --> prints out contents of all global variables
     locals()
         input('') --> next line is read in as string, can store to variable
-    
-    
-    *zip() unzip a list
-    zip() --> handy for double loop in a for
-    vars(*dict)
-    sum()
-    sorted(x)
-    reversed()
-    next() --> return next item from iterator
-    len(obj)
-    hash()
-    dict()
-    set()
-    list()  --> mutable seq type
-    tuple()  --> immutable seq type
-    collections module
 
-# pip
 
-    pip show PAK
-    details about installed package
+## modules
 
-    --user
-    on ubuntu designates user instead of system pip or pip3 installation
+tqdm
+
+    from tqdm import tqdm, trange
+    import time
+    for i in trange(int, desc="name of loop")
+        time.sleep(1) 
+
+msgpack - save data in binary

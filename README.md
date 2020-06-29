@@ -8,9 +8,9 @@ update on sundays
 
 * [bash](./INDEX_SAM/bash_chops.md)
 * [md markdown](./INDEX_SAM/markdown_chops.md)
-* [py3.6 python3](./INDEX_SAM/python3_pip_chops.md)
+* [python 3.8](./INDEX_SAM/python3_pip_chops.md)
 * [pd pandas](./INDEX_SAM/pandas_numpy_chops.md)
-* [ubuntu](./INDEX_SAM/ubuntu_chops.md)
+* [ubuntu linux 20.04](./INDEX_SAM/ubuntu_chops.md)
 
 ## -> Awkward Chops
 
