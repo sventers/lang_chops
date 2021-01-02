@@ -2,4 +2,7 @@
 hide_chops/*
 reference_inc/*
 utils_scripts/*
+.vscode/*
+reference_inc/*
+
 .gitignore
