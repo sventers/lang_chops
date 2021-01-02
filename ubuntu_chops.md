@@ -1,24 +1,55 @@
-# ubuntu terminal notes
+# Ubuntu Chops
 
-- [useful cli utilies](#cliTOOLS)
-- [network | wifi](#network)
-- [packages | apt-get | ppa](#packages)
-- [sound](#sound)
+- [index](#index)
+
 
 ---
 
-## -> cliTOOLS
+## -> Networking
 
-- fzf --- fuzzy search in file directory
-- cloc -- count lines of code
-- ranger --- explorer / finder in 
-- ncdu --- shows size of all files sorted navigate with arrow keys
-- jq --- cli for editing json
+```bash
+netstat -tunlp
+ss -tunlp
+```
 
---
+```bash
+nmcli
+wget
+curl
+ping
+ifconfig
+```
 
-inxi -Fxz
-    - show system profile, cpu, battery, hardware descriptions
+
+difficults connecting to unsecured wifi networks with login pages
+
+```bash
+sudo service network-manager restart
+ip route
+systemd-resolve --status
+iwconfig # check wifi speed
+```
+
+sometimes you can check the dns of a page if your phone connects to and then add it to you /etc/resolv.conf file ahead of 8.8.8.8 or your normal dns
+
+
+---
+
+## -> Command Line Tools
+
+```bash
+# tier 1
+fzf --- fuzzy search in file directory
+cloc -- count lines of code
+ranger --- explorer / finder in 
+ncdu --- shows size of all files sorted navigate with arrow keys
+
+# tier 2
+jq --- cli for editing json
+inxi -Fxz  ---- show system profile, cpu, battery, hardware descriptions
+```
+
+---
 
 ## -> Packages
 
@@ -32,72 +63,59 @@ aptitude
 
 ---
 
-## -> Network Management
-
-difficults connecting to unsecured wifi networks with login pages
-
-    sudo service network-manager restart
-    ip route
-    systemd-resolve --status
-
-    iwconfig # check wifi speed
-
-sometimes you can check the dns of a page if your phone connects to and then add it to you /etc/resolv.conf file ahead of 8.8.8.8 or your normal dns
-
----
 
 ## -> storage, disk space
 
+```bash
 fdisk
 df
 ds
 ps
 conky
+```
 
-## -> networking
-
-nmcli
-wget
-curl
-ping
-ifconfig
+---
 
 ## -> navigation
 
+```
 tree
+tmux
+
+```
+
+---
 
 ## output
 
+```
 cat
 head
 tail
 echo
+```
 
-## environment, .bashrc, .bashprofile, .zsh
+---
 
+## Config files
+
+.bashrc, .bashprofile, .zsh, .profile
+
+---
+
+## Environment
+
+```
 env
+```
 
-## loops
 
-for
-while
-if
+---
 
-## regex
-
-[a-z]_
-[0-9]_
-^
-.\*
-
-## pipes
-
-|
-
-## tmux
 
 ## hibernation issues
 
+```
 systemctl hibernate
 cd /sys/power
 man busctl
@@ -106,28 +124,32 @@ parted
 cat /proc/swaps
 cat /etc/fstab
 fdisk -l
+```
 
-## 3rd party bootable usb creation
+---
 
-## custom history
+For ubuntu swapfiles, disk management, partitions, .rcfiles, navigation
 
-history
 
-## python installation management pip, pip3, virtualenv, conda
+---
 
-pip3 --user
+## sections todo
+move mv, copy cp, touch, remove rm, make directory mkdir
 
-## node, npm, npx
+chown, permissions, octal rwx, drwxr-xr-x, chmod, chgrp
 
-npm
-npx
+3rd party bootable usb creation
+custom history
 
-## For ubuntu swapfiles, disk management, partitions, .rcfiles, navigation
+---
 
-apt-get
-apt
-sudo
+## index
 
-## move mv, copy cp, touch, remove rm, make directory mkdir
+*work in progress
 
-## chown, permissions, octal rwx, drwxr-xr-x, chmod, chgrp
+
+- [useful cli utilies](#cliTOOLS)
+- [network | wifi](#network)
+- [packages | apt-get | ppa](#packages)
+- [sound](#sound)
+

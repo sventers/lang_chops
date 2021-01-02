@@ -4,7 +4,7 @@ update on sundays
 
     ${i wish here you could search through everything}
 
-## -> Edited Chops
+## -> Chops
 
 * [bash](./INDEX_SAM/bash_chops.md)
 * [md markdown](./INDEX_SAM/markdown_chops.md)
@@ -12,7 +12,9 @@ update on sundays
 * [pd pandas](./INDEX_SAM/pandas_numpy_chops.md)
 * [ubuntu linux 20.04](./INDEX_SAM/ubuntu_chops.md)
 
-## -> Awkward Chops
+\
+\
+    rough
 
 * [git](./INDEX_TECH/git_chops.md)
 * [js javascript](./INDEX_TECH/js_chops.md)
