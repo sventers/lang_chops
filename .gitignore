@@ -2,6 +2,5 @@
 hide_chops/*
 reference_inc/*
 utils_scripts/*
-.vscode
+.vscode/*
 
-.gitignore
